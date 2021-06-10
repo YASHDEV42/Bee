@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #998235;
+}
+.container {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  margin: auto;
+}
+.container:nth-of-type(odd) {
+  margin: 0;
+}
+.container:nth-of-type(even) {
+  margin: 0 60%;
+}
+.fly {
+  position: absolute;
+  top: -120px;
+  left: -280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 50vw;
+}
+.fly .white {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+.box-white {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 75px;
+  height: 35px;
+  background: #ffffff;
+}
+.box-yellow {
+  width: 150px;
+  height: 75px;
+  background-color: #eff33c;
+  position: absolute;
+  top: 187.5px;
+  left: 50%;
+  transform: translate(-50%, -50.6%);
+  border-radius: 115px;
+  overflow: hidden;
+}
+.box-yellow .eye {
+  width: 15px;
+  height: 15px;
+  background-color: #191919;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 115px;
+}
+.box-yellow .line {
+  width: 25px;
+  height: 100%;
+  background-color: #191919;
+}
+.box-yellow .line.line1 {
+  position: absolute;
+  top: 0;
+  left: 70px;
+}
+.box-yellow .line.line2 {
+  position: absolute;
+  top: 0;
+  left: 35px;
+}
